@@ -18,8 +18,43 @@ A date string, such as 2007-12-03, compliant with the `full-date` format outline
 """
 scalar Date
 
+type Education {
+  certificate: String!
+  endYear: String!
+  grade: String!
+  id: ID!
+  location: String!
+  school: String!
+  startYear: String!
+}
+
+type Position {
+  achievements: [String!]!
+  company: String!
+  endDate: Date
+  id: ID!
+  location: String!
+  months: Int!
+  role: String!
+  startDate: Date!
+  years: Int!
+}
+
 type Query {
+  """Get bio"""
   bio: Bio!
+
+  """Find an education history by ID"""
+  education(id: ID): Education
+
+  """Get all education history"""
+  educations: [Education!]!
+
+  """Find a position by ID"""
+  position(id: ID): Position
+
+  """Get all positions"""
+  positions: [Position!]!
 }
 
 """

@@ -16,7 +16,7 @@ export const data = {
 			role: 'Senior software engineer',
 			company: 'Goodera',
 			location: 'Bangalore, Karnataka',
-			startDate: '13/08/2018',
+			startDate: '08/13/2018',
 			achievements: [
 				'Built custom dashboards for our top notch clients to keep track of their CSR activities.',
 				'Automated many monotonous tasks for a hassle free developing experience across teams.',
@@ -29,7 +29,7 @@ export const data = {
 			company: 'Indian Institue of Technology',
 			location: 'Guwahati, Assam',
 			startDate: '05/05/2017',
-			endDate: '05/08/2017',
+			endDate: '08/05/2017',
 			achievements: [
 				'Collaborated with Prof. Uday Kumar to understand design patterns and principles.',
 				'Researched extensively on the perception of design in India and awareness of design education in India.',
@@ -41,8 +41,8 @@ export const data = {
 			role: 'UI/UX design intern',
 			company: 'Phoenix Robotics',
 			location: 'Bhubaneswar, Odisha',
-			startDate: '12/07/2015',
-			endDate: '05/02/2016',
+			startDate: '07/12/2015',
+			endDate: '02/05/2016',
 			achievements: [
 				'Developed the UI Wireframes and mockups for the current website.',
 				'Designed some posters, sponsorship brochures, pamphlets for publicity purposes.',

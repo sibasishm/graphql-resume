@@ -41,6 +41,8 @@ export interface NexusGenScalars {
 
 export interface NexusGenRootTypes {
   Bio: faces.BioInterface;
+  Education: faces.EducationInterface;
+  Position: faces.PositionInterface;
   Query: {};
 }
 
@@ -65,12 +67,44 @@ export interface NexusGenFieldTypes {
     title: string; // String!
     website: NexusGenScalars['URL']; // URL!
   }
+  Education: { // field return type
+    certificate: string; // String!
+    endYear: string; // String!
+    grade: string; // String!
+    id: string; // ID!
+    location: string; // String!
+    school: string; // String!
+    startYear: string; // String!
+  }
+  Position: { // field return type
+    achievements: string[]; // [String!]!
+    company: string; // String!
+    endDate: NexusGenScalars['Date'] | null; // Date
+    id: string; // ID!
+    location: string; // String!
+    months: number; // Int!
+    role: string; // String!
+    startDate: NexusGenScalars['Date']; // Date!
+    years: number; // Int!
+  }
   Query: { // field return type
     bio: NexusGenRootTypes['Bio']; // Bio!
+    education: NexusGenRootTypes['Education'] | null; // Education
+    educations: NexusGenRootTypes['Education'][]; // [Education!]!
+    position: NexusGenRootTypes['Position'] | null; // Position
+    positions: NexusGenRootTypes['Position'][]; // [Position!]!
   }
 }
 
 export interface NexusGenArgTypes {
+  Query: {
+    education: { // args
+      id?: string | null; // ID
+    }
+    position: { // args
+      id?: string | null; // ID
+    }
+  }
 }
 
 export interface NexusGenAbstractResolveReturnTypes {
@@ -78,7 +112,7 @@ export interface NexusGenAbstractResolveReturnTypes {
 
 export interface NexusGenInheritedFields {}
 
-export type NexusGenObjectNames = "Bio" | "Query";
+export type NexusGenObjectNames = "Bio" | "Education" | "Position" | "Query";
 
 export type NexusGenInputNames = never;
 
