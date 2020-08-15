@@ -56,9 +56,14 @@ export interface NexusGenAllTypes extends NexusGenRootTypes {
 
 export interface NexusGenFieldTypes {
   Bio: { // field return type
+    behance: NexusGenScalars['URL']; // URL!
+    email: string; // String!
     github: NexusGenScalars['URL']; // URL!
+    linkedin: NexusGenScalars['URL']; // URL!
     name: string; // String!
+    stackoverflow: NexusGenScalars['URL']; // URL!
     title: string; // String!
+    website: NexusGenScalars['URL']; // URL!
   }
   Query: { // field return type
     bio: NexusGenRootTypes['Bio']; // Bio!

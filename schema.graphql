@@ -3,9 +3,14 @@
 
 
 type Bio {
+  behance: URL!
+  email: String!
   github: URL!
+  linkedin: URL!
   name: String!
+  stackoverflow: URL!
   title: String!
+  website: URL!
 }
 
 """

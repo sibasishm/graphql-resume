@@ -1,12 +1,17 @@
 export interface BioInterface {
 	name: string;
 	title: string;
+	email: string;
+	website: string;
 	github: string;
+	stackoverflow: string;
+	linkedin: string;
+	behance: string;
 }
 
 export interface PositionInterface {
 	id: string;
-	position: string;
+	role: string;
 	company: string;
 	startDate: string;
 	endDate?: string;
@@ -18,10 +23,8 @@ export interface EducationInterface {
 	id: string;
 	certificate: string;
 	school: string;
-	startDate: string;
-	endDate?: string;
+	startYear: string;
+	endYear: string;
 	location: string;
-	achieved: number;
-	total: number;
-	achievements: string[];
+	grade: string;
 }
