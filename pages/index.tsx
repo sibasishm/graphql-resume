@@ -37,16 +37,11 @@ const query = gql`
 `;
 
 export default function Home() {
-	const {
-		data: { bio, educations, positions },
-		error,
-		loading,
-	} = useQuery(query);
+	const { data, error, loading } = useQuery(query);
 
 	if (loading) return <h1>Loading...</h1>;
 
-	if (error) return <h1>Error!</h1>;
-
+	const { bio, positions, educations } = data;
 	return (
 		<>
 			<Head>
@@ -138,10 +133,6 @@ export default function Home() {
 					<section>
 						<h3>Skills</h3>
 						<ul>
-							<li>{bio.github}</li>
-							<li>{bio.stackoverflow}</li>
-							<li>{bio.behance}</li>
-							<li>{bio.linkedin}</li>
 							<li>{bio.github}</li>
 							<li>{bio.stackoverflow}</li>
 							<li>{bio.behance}</li>
