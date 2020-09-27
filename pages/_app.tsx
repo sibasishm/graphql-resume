@@ -2,7 +2,7 @@ import { ApolloProvider } from '@apollo/client';
 
 import { useApollo } from 'lib/apolloClient';
 
-import '../styles/globals.css';
+import '../styles/index.css';
 
 function MyApp({ Component, pageProps }) {
 	const client = useApollo();

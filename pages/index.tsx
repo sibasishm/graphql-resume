@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import { useQuery, gql } from '@apollo/client';
 
-import styles from '../styles/Home.module.css';
-
 const query = gql`
 	query ResumeQuery {
 		bio {
@@ -48,19 +46,18 @@ export default function Home() {
 				<title>Sibasish Mohanty | Resume</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<header className={styles.header}>
-				<h1>{bio.name}</h1>
+			<header className='bg-gray-200'>
+				<h1 className='font-serif'>{bio.name}</h1>
 				<h2>{bio.title}</h2>
 			</header>
-			<main className={styles.main}>
-				<div className={styles.grid__one}>
+			<main>
+				<div>
 					<section>
 						<h3>Professional Summary</h3>
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing
-							elit. Expedita praesentium quia deserunt ad quasi.
-							Dolorum quo quaerat nam ratione obcaecati,
-							exercitationem suscipit esse blanditiis dolorem
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+							praesentium quia deserunt ad quasi. Dolorum quo quaerat nam
+							ratione obcaecati, exercitationem suscipit esse blanditiis dolorem
 							vitae placeat, architecto est nesciunt!
 						</p>
 					</section>
@@ -85,8 +82,8 @@ export default function Home() {
 										{years} years, {months} months
 									</p>
 									<ul>
-										{achievements.map((item) => (
-											<li>{item}</li>
+										{achievements.map(item => (
+											<li key={item}>{item}</li>
 										))}
 									</ul>
 								</div>
@@ -120,7 +117,7 @@ export default function Home() {
 						)}
 					</section>
 				</div>
-				<div className={styles.grid__two}>
+				<div>
 					<section>
 						<h3>Contact details</h3>
 						<ul>
