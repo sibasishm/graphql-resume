@@ -9,6 +9,7 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
+				sans: ['Epilouge', ...defaultTheme.fontFamily.sans],
 				serif: ['Playfair Display', ...defaultTheme.fontFamily.serif],
 			},
 		},
@@ -26,6 +27,28 @@ module.exports = {
 						fontDisplay: 'swap',
 						src:
 							'url("/fonts/PlayfairDisplay-VariableFontwght.woff2") format("woff2")',
+					},
+				},
+				{
+					'@font-face': {
+						fontFamily: 'Epilogue',
+						fontWeight: '100 900',
+						fontStyle: 'normal',
+						fontNamedInstance: 'Regular',
+						fontDisplay: 'swap',
+						src:
+							'url("/fonts/Epilogue-VariableFontwght.woff2") format("woff2")',
+					},
+				},
+				{
+					'@font-face': {
+						fontFamily: 'Epilogue',
+						fontWeight: '100 900',
+						fontStyle: 'italic',
+						fontNamedInstance: 'Italic',
+						fontDisplay: 'swap',
+						src:
+							'url("/fonts/Epilogue-Italic-VariableFontwght.woff2") format("woff2")',
 					},
 				},
 			]);

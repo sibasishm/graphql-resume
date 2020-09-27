@@ -46,11 +46,11 @@ export default function Home() {
 				<title>Sibasish Mohanty | Resume</title>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<header className='bg-gray-200'>
-				<h1 className='font-serif'>{bio.name}</h1>
+			<header>
+				<h1 className='text-lg font-black font-serif'>{bio.name}</h1>
 				<h2>{bio.title}</h2>
 			</header>
-			<main>
+			<main className='font-bold text-lg'>
 				<div>
 					<section>
 						<h3>Professional Summary</h3>
