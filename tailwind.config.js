@@ -37,7 +37,7 @@ module.exports = {
 						fontNamedInstance: 'Regular',
 						fontDisplay: 'swap',
 						src:
-							'url("/fonts/Epilogue-VariableFontwght.woff2") format("woff2")',
+							'url("/fonts/Epilogue-VariableFont_wght.ttf") format("truetype")',
 					},
 				},
 				{
