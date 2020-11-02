@@ -3,6 +3,7 @@ export interface BioInterface {
 	title: string;
 	email: string;
 	website: string;
+	twitter: string;
 	github: string;
 	stackoverflow: string;
 	linkedin: string;

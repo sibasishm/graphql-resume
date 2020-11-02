@@ -10,6 +10,7 @@ type Bio {
   name: String!
   stackoverflow: URL!
   title: String!
+  twitter: URL!
   website: URL!
 }
 
