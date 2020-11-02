@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
 
 	return (
 		<ApolloProvider client={client}>
-			<IconContext.Provider value={{ className: 'w-8 h-8' }}>
+			<IconContext.Provider value={{ className: 'text-gray-700 inline-block' }}>
 				<Component {...pageProps} />
 			</IconContext.Provider>
 		</ApolloProvider>
