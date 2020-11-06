@@ -4,9 +4,9 @@ export const data = {
 		title: 'Full stack developer',
 		email: 'smsibasish@gmail.com',
 		website: 'https://sibasish.me',
+		twitter: 'https://twitter.com/smsibasish',
 		github: 'https://github.com/sibasishm',
-		stackoverflow:
-			'https://stackoverflow.com/users/9128145/sibasish-mohanty',
+		stackoverflow: 'https://stackoverflow.com/users/9128145/sibasish-mohanty',
 		linkedin: 'https://www.linkedin.com/in/sibasish-mohanty',
 		behance: 'https://www.behance.net/Sibasish19',
 	},

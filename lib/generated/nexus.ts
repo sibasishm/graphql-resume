@@ -65,6 +65,7 @@ export interface NexusGenFieldTypes {
     name: string; // String!
     stackoverflow: NexusGenScalars['URL']; // URL!
     title: string; // String!
+    twitter: NexusGenScalars['URL']; // URL!
     website: NexusGenScalars['URL']; // URL!
   }
   Education: { // field return type
