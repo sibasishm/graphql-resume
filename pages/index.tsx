@@ -123,9 +123,12 @@ export default function Home() {
 						</section>
 						<a
 							className='hidden mt-12 p-2 md:w-full md:block text-center bg-blue-600 text-white font-semibold tracking-wider'
-							href='mailto:smsibasish@gmail.com'
+							href='https://api.microlink.io/?url=https://graphql-resume-six.vercel.app&pdf&embed=pdf.url&margin=0.4cm'
+							target='_blank'
+							rel='noopener noreferrer'
+							download='Sibasish-Mohanty-Resume.pdf'
 						>
-							Hire me
+							Get a copy
 						</a>
 					</div>
 				</header>
