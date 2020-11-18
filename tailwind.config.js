@@ -5,7 +5,7 @@ module.exports = {
 		removeDeprecatedGapUtilities: true,
 		purgeLayersByDefault: true,
 	},
-	purge: ['./pages/*.tsx'],
+	purge: ['./pages/*.tsx', './components/*.tsx'],
 	theme: {
 		extend: {
 			fontFamily: {
